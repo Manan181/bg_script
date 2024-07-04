@@ -26,3 +26,13 @@ console.log('hello from the pxbigcintegration script');
 
     // Use the parameters as needed in your script
 })();
+
+class SecretDemo {
+  #secret='eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjaWQiOlsxXSwiY29ycyI6WyJodHRwczovL3N0b3JlLTliaXE3anVnaXkubXliaWdjb21tZXJjZS5jb20iXSwiZWF0IjoxNzIwMjQzMDM4LCJpYXQiOjE3MjAwNzAyMzgsImlzcyI6IkJDIiwic2lkIjoxMDAzMjAzODIwLCJzdWIiOiJCQyIsInN1Yl90eXBlIjowLCJ0b2tlbl90eXBlIjoxfQ.K9nYKFti8nO_ye4hbsghyXLF2yKxO5D4KfrRoB2rtge_HvEv3NZwWcbBBFkt7jf6dD9dpOT0jkJOPrY9RGATPg
+';
+  hasSecret() {
+    return #secret in this;
+  }
+}
+const secretDemo = new SecretDemo();
+console.log(secretDemo.hasSecret(), 'hasSecret');
